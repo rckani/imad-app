@@ -14,13 +14,16 @@ app.get('/article-1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-1.html'));
 });
 
+
 app.get('/article-2', function (req, res) {
-  res.send('article 2 response');
+  res.sendFile(path.join(__dirname, 'ui', 'article-2.html'));
 });
 
+
 app.get('/article-3', function (req, res) {
-  res.send('article 3 response');
+  res.sendFile(path.join(__dirname, 'ui', 'article-3.html'));
 });
+
 
 
 app.get('/ui/style.css', function (req, res) {
